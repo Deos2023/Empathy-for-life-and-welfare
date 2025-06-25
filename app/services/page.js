@@ -42,7 +42,7 @@ export default function ServicesPage() {
                        Our Comprehensive Treatment Programs
                     </h1>
                     <p className="text-white text-lg max-w-2xl mx-auto mb-6">
-                      Evidence-based, compassionate care tailored to each individual's recovery journey
+                      Evidence-based, compassionate care tailored to each individuals recovery journey
                     </p>
                     <Link
                       href="#contact"
