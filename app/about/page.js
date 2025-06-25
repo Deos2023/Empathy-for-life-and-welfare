@@ -10,7 +10,7 @@ export default function AboutPage() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0)
   const testimonials = [
     {
-      quote: "The team at Empathy For Life And Welfare saved my brother's life. Their dedication is unmatched.",
+      quote: "The team at Empathy For Life And Welfare saved my brothers life. Their dedication is unmatched.",
       author: "Ananya R.",
       role: "Family member"
     },
@@ -68,7 +68,7 @@ export default function AboutPage() {
                  Our Story of Healing and Hope
               </h1>
               <p className="text-white text-lg max-w-2xl mx-auto mb-6">
-                Founded in 2023, we've dedicated ourselves to transforming lives through compassionate addiction treatment.
+                Founded in 2023, we have dedicated ourselves to transforming lives through compassionate addiction treatment.
               </p>
               <Link
                 href="#contact"
@@ -112,7 +112,7 @@ export default function AboutPage() {
               </p>
               <div className="bg-amber-50 border-l-4 border-amber-500 p-4">
                 <p className="text-gray-700 italic">
-                  "We don't just treat addiction - we restore lives, rebuild families, and renew hope."
+                  &quot;We dont just treat addiction - we restore lives, rebuild families, and renew hope.&quot;
                 </p>
               </div>
             </div>
@@ -142,7 +142,7 @@ export default function AboutPage() {
               {
                 icon: <Shield className="w-10 h-10 text-amber-500" />,
                 title: "Safety & Dignity",
-                description: "Our facility provides a secure environment where every individual's dignity is respected."
+                description: "Our facility provides a secure environment where every individuals dignity is respected."
               },
               {
                 icon: <Users className="w-10 h-10 text-amber-500" />,
@@ -170,7 +170,7 @@ export default function AboutPage() {
                   </svg>
                 ),
                 title: "Community Focus",
-                description: "We're committed to serving the Kolkata community with accessible, quality care."
+                description: "Were committed to serving the Kolkata community with accessible, quality care."
               }
             ].map((value, index) => (
               <div key={index} className="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow">
@@ -258,13 +258,13 @@ export default function AboutPage() {
   <div className="relative z-10 max-w-4xl mx-auto px-6">
     <div className="text-center mb-12">
       <h2 className="text-3xl text-white font-bold mb-4">Stories of Hope and Recovery</h2>
-      <p className="text-gray-100">Hear from those who've walked the path to recovery with us</p>
+      <p className="text-gray-100">Hear from those who have  walked the path to recovery with us</p>
     </div>
 
     <div className="bg-white rounded-xl shadow-lg p-8 relative">
       <Quote className="text-gray-200 absolute top-4 left-4" size={40} />
       <div className="min-h-[200px] flex flex-col justify-center">
-        <p className="text-xl text-gray-700 mb-6">"{testimonials[currentTestimonial].quote}"</p>
+        <p className="text-xl text-gray-700 mb-6">&quot;{testimonials[currentTestimonial].quote}&quot;</p>
         <div>
           <p className="font-semibold">{testimonials[currentTestimonial].author}</p>
           <p className="text-gray-500 text-sm">{testimonials[currentTestimonial].role}</p>

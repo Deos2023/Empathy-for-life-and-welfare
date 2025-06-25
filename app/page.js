@@ -13,7 +13,7 @@ export default function HomePage() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    const message = `Hello, I'm ${name}. My number is ${phone}. I need help with ${concern}. Please contact me.`
+    const message = `Hello, Im ${name}. My number is ${phone}. I need help with ${concern}. Please contact me.`
     const whatsappURL = `https://wa.me/918910806466?text=${encodeURIComponent(message)}`
     window.open(whatsappURL, '_blank')
   }
@@ -28,7 +28,7 @@ export default function HomePage() {
     {
       quote: "The family therapy sessions helped heal relationships I thought were broken forever. Grateful for their holistic approach.",
       author: "Priya M.",
-      role: "Patient's family member"
+      role: "Patients family member"
     },
     {
       quote: "After trying multiple centers, this was the first place that treated me with genuine care and understanding.",
@@ -78,7 +78,7 @@ export default function HomePage() {
                 Reclaim Your Life From Addiction
               </h1>
               <p className="text-white text-lg max-w-2xl mx-auto mb-6">
-                Since 2023, we've helped hundreds overcome substance dependence through compassionate, evidence-based care.
+                Since 2023, we have helped hundreds overcome substance dependence through compassionate, evidence-based care.
               </p>
               <Link
                 href="#contact"
@@ -104,7 +104,7 @@ export default function HomePage() {
             </p>
             <div className="bg-amber-50 border-l-4 border-amber-500 p-4 mb-6">
               <p className="text-gray-700 italic">
-                "Recovery is not about perfection. It's about progress, support, and rediscovering your strength."
+                Recovery is not about perfection. Its about progress, support, and rediscovering your strength.
               </p>
             </div>
             <ul className="space-y-2 text-gray-700">
@@ -287,13 +287,13 @@ export default function HomePage() {
   <div className="relative z-10 max-w-4xl mx-auto px-6">
     <div className="text-center mb-12">
       <h2 className="text-3xl text-white font-bold mb-4">Stories of Hope and Recovery</h2>
-      <p className="text-gray-100">Hear from those who've walked the path to recovery with us</p>
+      <p className="text-gray-100">Hear from those who have walked the path to recovery with us</p>
     </div>
 
     <div className="bg-white rounded-xl shadow-lg p-8 relative">
       <Quote className="text-gray-200 absolute top-4 left-4" size={40} />
       <div className="min-h-[200px] flex flex-col justify-center">
-        <p className="text-xl text-gray-700 mb-6">"{testimonials[currentTestimonial].quote}"</p>
+        <p className="text-xl text-gray-700 mb-6">{testimonials[currentTestimonial].quote}</p>
         <div>
           <p className="font-semibold">{testimonials[currentTestimonial].author}</p>
           <p className="text-gray-500 text-sm">{testimonials[currentTestimonial].role}</p>
@@ -454,7 +454,7 @@ export default function HomePage() {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">Begin Your Recovery Journey</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Taking the first step is often the hardest. We're here to make it easier.
+            Taking the first step is often the hardest. Were here to make it easier.
           </p>
         </div>
 

@@ -84,7 +84,7 @@ ${message}`
                        Contact Empathy For Life And Welfare
                     </h1>
                     <p className="text-white text-lg max-w-2xl mx-auto mb-6">
-                     Reach out today to begin your journey to recovery. We're available 24/7 to help.
+                     Reach out today to begin your journey to recovery. We are available 24/7 to help.
                     </p>
                     <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link
@@ -211,7 +211,7 @@ ${message}`
               <div className="p-8 md:p-10">
                 <h2 className="text-3xl font-bold text-gray-800 mb-2">Send Us a Message</h2>
                 <p className="text-gray-600 mb-6">
-                  Fill out the form below and we'll contact you shortly. For immediate assistance, 
+                  Fill out the form below and well contact you shortly. For immediate assistance, 
                   please call us directly.
                 </p>
 
@@ -325,7 +325,7 @@ ${message}`
                 <div className="relative z-10 h-full flex flex-col justify-end p-8 text-white">
                   <h3 className="text-2xl font-bold mb-4">Need Immediate Help?</h3>
                   <p className="mb-6">
-                    If you or a loved one is in crisis, don't wait. Call our 24/7 helpline now.
+                    If you or a loved one is in crisis, dont wait. Call our 24/7 helpline now.
                   </p>
                   <Link
                     href="tel:8910806466"
