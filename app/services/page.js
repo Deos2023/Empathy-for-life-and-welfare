@@ -364,66 +364,89 @@ export default function ServicesPage() {
 
       {/* Therapies Section */}
       <section className="py-20 px-6 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-              Evidence-Based Therapies We Offer
-            </h2>
-            <div className="w-20 h-1 bg-amber-500 mx-auto"></div>
-          </div>
+  <div className="max-w-7xl mx-auto">
+    <div className="text-center mb-16">
+      <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+        Evidence-Based Therapies We Offer
+      </h2>
+      <div className="w-20 h-1 bg-amber-500 mx-auto"></div>
+    </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Cognitive Behavioral Therapy (CBT)",
-                description: "Identify and change negative thought patterns and behaviors related to substance use.",
-                icon: <Activity className="w-10 h-10 text-amber-500" />
-              },
-              {
-                title: "Motivational Interviewing",
-                description: "Enhance motivation to change by resolving ambivalence about recovery.",
-                icon: <svg className="w-10 h-10 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              },
-              {
-                title: "Dialectical Behavior Therapy",
-                description: "Develop skills in mindfulness, distress tolerance, emotion regulation, and interpersonal effectiveness.",
-                icon: <svg className="w-10 h-10 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11" />
-                </svg>
-              },
-              {
-                title: "Group Therapy",
-                description: "Share experiences and gain support from peers in recovery under professional guidance.",
-                icon: <Users className="w-10 h-10 text-amber-500" />
-              },
-              {
-                title: "Mindfulness & Meditation",
-                description: "Develop awareness and coping strategies to manage cravings and stress.",
-                icon: <svg className="w-10 h-10 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7a4 4 0 1 0 8 0m-4 4a4 4 0 000 8m-6-12h12m-6 6h12m-12 6h12" />
-                </svg>
-              },
-              {
-                title: "Family Systems Therapy",
-                description: "Address family dynamics and improve communication to support recovery.",
-                icon: <svg className="w-10 h-10 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
-              }
-            ].map((therapy, index) => (
-              <div key={index} className="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition-shadow">
-                <div className="mb-4">
-                  {therapy.icon}
-                </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-2">{therapy.title}</h3>
-                <p className="text-gray-600">{therapy.description}</p>
-              </div>
-            ))}
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+      {[
+        {
+          title: "Cognitive Behavioral Therapy (CBT)",
+          description: "Identify and change negative thought patterns and behaviors related to substance use.",
+          icon: <Activity className="w-10 h-10 text-amber-500" />
+        },
+        {
+          title: "Motivational Interviewing",
+          description: "Enhance motivation to change by resolving ambivalence about recovery.",
+          icon: (
+            <svg className="w-10 h-10 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          )
+        },
+        {
+          title: "Dialectical Behavior Therapy",
+          description: "Develop skills in mindfulness, distress tolerance, emotion regulation, and interpersonal effectiveness.",
+          icon: (
+            <svg className="w-10 h-10 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11" />
+            </svg>
+          )
+        },
+        {
+          title: "Group Therapy",
+          description: "Share experiences and gain support from peers in recovery under professional guidance.",
+          icon: <Users className="w-10 h-10 text-amber-500" />
+        },
+        {
+          title: "Mindfulness & Meditation",
+          description: "Develop awareness and coping strategies to manage cravings and stress.",
+          icon: (
+            <svg className="w-10 h-10 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7a4 4 0 1 0 8 0m-4 4a4 4 0 000 8m-6-12h12m-6 6h12m-12 6h12" />
+            </svg>
+          )
+        },
+        {
+          title: "Family Systems Therapy",
+          description: "Address family dynamics and improve communication to support recovery.",
+          icon: (
+            <svg className="w-10 h-10 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+          )
+        }
+      ].map((therapy, index) => (
+        <div
+          key={index}
+          className="
+            relative bg-white p-8 rounded-2xl border border-white/10
+            shadow-[0_25px_60px_rgba(0,0,0,0.05)] hover:shadow-[0_35px_80px_rgba(0,0,0,0.1)]
+            transform transition-transform duration-500 ease-[cubic-bezier(.19,1,.22,1)]
+            hover:-translate-y-3
+            before:absolute before:inset-0 before:bg-gradient-to-br before:from-white/40 before:to-transparent before:rounded-2xl before:opacity-0 hover:before:opacity-100
+            after:absolute after:inset-0 after:rounded-2xl after:bg-white/10 after:blur-2xl after:opacity-0 hover:after:opacity-100
+            overflow-hidden
+          "
+        >
+          {/* Soft Light Effect Circle */}
+          <div className="absolute -top-8 -right-8 w-24 h-24 rounded-full bg-white/30 blur-2xl opacity-20" />
+
+          <div className="relative z-10">
+            <div className="mb-4">{therapy.icon}</div>
+            <h3 className="text-xl font-bold text-gray-800 mb-2">{therapy.title}</h3>
+            <p className="text-gray-600">{therapy.description}</p>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* Addiction Types Section */}
       <section className="py-20 bg-gray-50">

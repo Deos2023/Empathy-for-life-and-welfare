@@ -118,57 +118,78 @@ export default function HomePage() {
       </section>
 
       {/* Our Approach Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Our Holistic Treatment Approach</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              We address addiction through multiple dimensions of wellness for comprehensive healing.
-            </p>
-          </div>
+      <section className="py-16 bg-gradient-to-b from-gray-100 via-gray-50 to-white">
+  <div className="max-w-7xl mx-auto px-6">
+    <div className="text-center mb-12">
+      <h2 className="text-3xl font-bold mb-4">Our Holistic Treatment Approach</h2>
+      <p className="text-gray-600 max-w-2xl mx-auto">
+        We address addiction through multiple dimensions of wellness for comprehensive healing.
+      </p>
+    </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Medical Care",
-                description: "Safe detoxification and medication management under medical supervision",
-                icon: "🩺"
-              },
-              {
-                title: "Psychological Support",
-                description: "Evidence-based therapies to address root causes of addiction",
-                icon: "🧠"
-              },
-              {
-                title: "Social Rehabilitation",
-                description: "Rebuilding relationships and developing healthy social skills",
-                icon: "🤝"
-              },
-              {
-                title: "Vocational Training",
-                description: "Skill development for successful reintegration into society",
-                icon: "🛠️"
-              },
-              {
-                title: "Spiritual Growth",
-                description: "Finding meaning and purpose beyond addiction",
-                icon: "🕊️"
-              },
-              {
-                title: "Aftercare Planning",
-                description: "Continued support for long-term recovery success",
-                icon: "📅"
-              }
-            ].map((item, index) => (
-              <div key={index} className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-                <div className="text-3xl mb-4">{item.icon}</div>
-                <h3 className="font-semibold text-xl mb-2">{item.title}</h3>
-                <p className="text-gray-600">{item.description}</p>
-              </div>
-            ))}
+    <div className="grid md:grid-cols-3 gap-8">
+      {[
+        {
+          title: "Medical Care",
+          description: "Safe detoxification and medication management under medical supervision",
+          icon: "🩺",
+          bgColor: "bg-blue-50"
+        },
+        {
+          title: "Psychological Support",
+          description: "Evidence-based therapies to address root causes of addiction",
+          icon: "🧠",
+          bgColor: "bg-purple-50"
+        },
+        {
+          title: "Social Rehabilitation",
+          description: "Rebuilding relationships and developing healthy social skills",
+          icon: "🤝",
+          bgColor: "bg-amber-50"
+        },
+        {
+          title: "Vocational Training",
+          description: "Skill development for successful reintegration into society",
+          icon: "🛠️",
+          bgColor: "bg-green-50"
+        },
+        {
+          title: "Spiritual Growth",
+          description: "Finding meaning and purpose beyond addiction",
+          icon: "🕊️",
+          bgColor: "bg-indigo-50"
+        },
+        {
+          title: "Aftercare Planning",
+          description: "Continued support for long-term recovery success",
+          icon: "📅",
+          bgColor: "bg-teal-50"
+        }
+      ].map((item, index) => (
+        <div
+          key={index}
+          className={`
+            relative overflow-hidden p-6 rounded-3xl 
+            shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-white/20 
+            hover:shadow-[0_30px_80px_rgba(0,0,0,0.15)]
+            transform transition-all duration-500 ease-[cubic-bezier(.19,1,.22,1)] 
+            hover:-translate-y-4 backdrop-blur-[2px] ${item.bgColor}
+          `}
+        >
+          {/* Decorative blurred glow circle */}
+          <div className="absolute -top-8 -right-8 w-28 h-28 bg-white/40 rounded-full blur-3xl opacity-30 pointer-events-none z-0" />
+
+          <div className="relative z-10">
+            <div className="text-5xl mb-4 drop-shadow-md">{item.icon}</div>
+            <h3 className="text-xl font-semibold mb-2 text-gray-800">{item.title}</h3>
+            <p className="text-gray-600">{item.description}</p>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* Services section */}
       <div className='bg-white p-16'>
