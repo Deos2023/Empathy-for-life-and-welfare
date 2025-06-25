@@ -18,7 +18,7 @@ export default function Navbar() {
   }, [pathname]);
 
   return (
-    <header className="w-full bg-[#fffdf8] py-4 shadow-sm fixed top-0 z-50">
+    <header className="w-full bg-[#fffdf8] py-4 shadow-sm  top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
@@ -26,7 +26,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+        <nav className="hidden md:flex items-center gap-8 text-sm font-medium  text-slate-600">
           {[
             { href: '/', label: 'Home' },
             { href: '/about', label: 'About Us' },
